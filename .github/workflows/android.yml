@@ -1,7 +1,7 @@
 name: Minimal Android CI Workflow
 
 on:
-  push:
+  workflow_dispactch:
     branches:
       - master
     tags:
