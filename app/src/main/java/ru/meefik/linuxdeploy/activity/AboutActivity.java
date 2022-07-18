@@ -18,6 +18,8 @@ public class AboutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_about);
         TextView atv = findViewById(R.id.aboutTextView);
         atv.setMovementMethod(LinkMovementMethod.getInstance());
+        TextView stv = findViewById(R.id.codeTextView);
+        stv.setMovementMethod(LinkMovementMethod.getInstance());
         TextView vtv = findViewById(R.id.versionView);
         vtv.setText(getString(R.string.app_version, PrefStore.getVersion()));
     }
