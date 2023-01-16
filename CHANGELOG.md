@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [UNOFFICIAL]
+## [2.7.2]
+### Changed
+- Added support for Debian 11 (Bullseye)
+- TODO: Remove or replace unused menu options (external repo)
+
 ## [2.7.1]
 ### Changed
 - Added support for Ubuntu 20.04 - 22.04

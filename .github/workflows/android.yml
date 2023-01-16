@@ -1,4 +1,4 @@
-name: Build 
+name: Build Debug APK
 on:
   push:
     branches: [ "refactor" ]
@@ -21,19 +21,19 @@ jobs:
           distribution: 'temurin'
           java-version: '11'
 
-      - name: Build app-debug.apk
+      - name: Build debug apk
         run: |
           ./gradlew assembleDebug
           mkdir da-output
-          mv app/build/outputs/apk/debug/app-debug.apk da-output/app-debug.apk
-      - name: Upload app-debug.apk to artifacts
+          mv app/build/outputs/apk/debug/app-debug.apk da-output/LinuxDeployFork-debug.apk
+      - name: Upload LinuxDeployFork-debug.apk to artifacts
         uses: actions/upload-artifact@v3
         with:
           name: app-debug
-          path: da-output/app-debug.apk
+          path: da-output/LinuxDeployFork-debug.apk
 
-      - name: Upload app-debug.apk to release
+      - name: Upload debug apk to release
         uses: svenstaro/upload-release-action@v2
         with:
-          file: da-output/app-debug.apk
+          file: da-output/LinuxDeployFork-debug.apk
           overwrite: true
