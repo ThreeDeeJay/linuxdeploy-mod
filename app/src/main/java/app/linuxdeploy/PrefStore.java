@@ -427,25 +427,6 @@ public class PrefStore {
     }
 
     /**
-     * Get repository URL
-     *
-     * @param c context
-     * @return url
-     */
-    public static String getRepositoryUrl(Context c) {
-        return SETTINGS.get(c, "repository_url");
-    }
-
-    /**
-     * Set repository URL
-     *
-     * @param c context
-     */
-    public static void setRepositoryUrl(Context c, String url) {
-        SETTINGS.set(c, "repository_url", url);
-    }
-
-    /**
      * Telnet is enabled
      *
      * @param c context

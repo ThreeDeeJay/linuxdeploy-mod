@@ -154,7 +154,6 @@ public class MainActivity extends AppCompatActivity implements
             EnvUtils.execServices(getBaseContext(), new String[]{"telnetd", "httpd"}, "start");
         } else {
             // Update ENV
-            PrefStore.setRepositoryUrl(this, getString(R.string.repository_url));
             updateEnvWithRequestPermissions();
         }
     }
@@ -232,9 +231,6 @@ public class MainActivity extends AppCompatActivity implements
             case R.id.nav_profiles:
                 Intent intent_profiles = new Intent(this, ProfilesActivity.class);
                 startActivity(intent_profiles);
-                break;
-            case R.id.nav_repository:
-                openRepository();
                 break;
             case R.id.nav_terminal:
                 String uri = "http://127.0.0.1:" + PrefStore.getHttpPort(this) +
@@ -435,14 +431,6 @@ public class MainActivity extends AppCompatActivity implements
      */
     private void containerStatus() {
         EnvUtils.execService(getBaseContext(), "status", null);
-    }
-
-    /**
-     * Open repository action
-     */
-    private void openRepository() {
-        Intent intent = new Intent(this, RepositoryActivity.class);
-        startActivity(intent);
     }
 
     /**

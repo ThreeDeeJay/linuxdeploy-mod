@@ -32,7 +32,6 @@
     <string name="title_activity_properties">"Properti"</string>
     <string name="title_activity_profiles">"Profil"</string>
     <string name="title_activity_mounts">"Mounts"</string>
-    <string name="title_activity_repository">"Repositori"</string>
     <string name="confirm_start_title">"Mulai"</string>
     <string name="confirm_stop_title">"Berhenti"</string>
     <string name="confirm_start_message">"Me-mount container dan mulai layanan?"</string>

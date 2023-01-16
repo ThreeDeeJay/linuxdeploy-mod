@@ -34,7 +34,6 @@
     <string name="title_activity_properties">Properties</string>
     <string name="title_activity_profiles">Profiles</string>
     <string name="title_activity_mounts">Mounts</string>
-    <string name="title_activity_repository">Repository</string>
     <string name="confirm_start_title">Start</string>
     <string name="confirm_stop_title">Stop</string>
     <string name="confirm_start_message">Mount the container and start services?</string>

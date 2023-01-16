@@ -32,7 +32,6 @@
     <string name="title_activity_properties">属性</string>
     <string name="title_activity_profiles">配置文件</string>
     <string name="title_activity_mounts">挂载</string>
-    <string name="title_activity_repository">仓库</string>
     <string name="confirm_start_title">启动</string>
     <string name="confirm_stop_title">停止</string>
     <string name="confirm_start_message">装载 GNU/Linux 容器并启动服务？</string>
