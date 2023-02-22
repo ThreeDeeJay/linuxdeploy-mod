@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="ru.meefik.linuxdeploy"
+    package="app.linuxdeploy"
     android:installLocation="internalOnly">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -75,14 +75,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".activity.PropertiesActivity" />
         </activity>
-        <activity
-            android:name=".activity.RepositoryActivity"
-            android:label="@string/title_activity_repository"
-            android:parentActivityName=".activity.MainActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.MainActivity" />
-        </activity>
         <activity android:name=".activity.FullscreenActivity" />
 
         <receiver
@@ -99,7 +91,7 @@
             android:enabled="true"
             android:exported="false">
             <intent-filter>
-                <action android:name="ru.meefik.linuxdeploy.BROADCAST_ACTION" />
+                <action android:name="app.linuxdeploy.BROADCAST_ACTION" />
             </intent-filter>
         </receiver>
         <receiver

@@ -211,7 +211,6 @@
     <string name="title_http_conf_preference">Ограничение доступа</string>
     <string name="summary_telnet_localhost_preference">Разрешить только локальные подключения</string>
     <string name="title_telnet_localhost_preference">Локальный доступ</string>
-    <string name="title_activity_repository">Репозиторий</string>
     <string name="menu_refresh">Обновить</string>
     <string name="repository_change_url_title">URL репозитория</string>
     <string name="repository_default_description">Нет описания.</string>
